@@ -1,6 +1,5 @@
 <html>
-<head>
-<title>ITF Lab</title>
+<h<title>ITF Lab</title>
 </head>
 <body>
 <?php
@@ -27,7 +26,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a href="Delete.php">Delete</a></td>
+    <td><a href="Delete.php?ID=<?php echo $Result['ID'];?>">Delete</a></td>
   </tr>
 <?php
 }
@@ -37,4 +36,4 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 </body>
-</html>
+</html>ead>
