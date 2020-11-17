@@ -32,6 +32,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
+<a href="form.php">Add</a>
 <?php
 mysqli_close($conn);
 ?>
