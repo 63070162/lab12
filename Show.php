@@ -1,5 +1,5 @@
 <html>
-<h<title>ITF Lab</title>
+<title>ITF Lab</title>
 </head>
 <body>
 <?php
@@ -36,4 +36,4 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 </body>
-</html>ead>
+</html>
