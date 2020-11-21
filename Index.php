@@ -26,7 +26,7 @@
 								mysqli_real_connect($conn, 'labitf.mysql.database.azure.com', 'it63070162@labitf', '0994424004Art', 'labitf', 3306);
 								if (mysqli_connect_errno($conn))
 								{
-								    die('Failed to connect :(: '.mysqli_connect_error());
+								    die('Failed to connect :();
 								}
 								$res = mysqli_query($conn, 'SELECT * FROM guestbook');
 							?>
