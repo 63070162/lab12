@@ -23,7 +23,7 @@
 						<div class="table-success">
 							<?php
 								$conn = mysqli_init();
-								mysqli_real_connect($conn, 'beta.mysql.database.azure.com', 'it63070113@beta', 'EMLcnk22', 'ITFLab', 3306);
+								mysqli_real_connect($conn, 'labitf.mysql.database.azure.com', 'it63070162@labitf', '0994424004Art', 'labitf', 3306);
 								if (mysqli_connect_errno($conn))
 								{
 								    die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -44,7 +44,7 @@
 										while($Result = mysqli_fetch_array($res)) {
 									?>
 									<tr>
-										<td><a href="delete.php?ID=<?php echo $Result['ID'];?>" class="btn btn-warning mb-2 mb-md-0">DEL</a> <a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-primary">EDIT</a></td>
+										<td><a href="Delete.php?ID=<?php echo $Result['ID'];?>" class="btn btn-warning mb-2 mb-md-0">DEL</a> <a href="Edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-primary">Edit</a></td>
 										<td><?php echo $Result['Name'];?></td>
 										<td><?php echo $Result['Comment'];?></td>
 										<td><?php echo $Result['Link'];?></td>
